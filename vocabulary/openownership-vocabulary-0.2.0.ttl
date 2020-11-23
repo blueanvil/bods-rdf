@@ -1,0 +1,125 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix bods: <http://bods.openownership.org/vocabulary/> .
+@prefix bods-res: <http://bods.openownership.org/resource/> .
+
+bods:CorporateAgent a rdfs:Class;
+  owl:equivalentClass foaf:Agent .
+
+bods:Person a rdfs:Class;
+  rdfs:subClassOf bods:CorporateAgent;
+  owl:equivalentClass foaf:Person .
+
+bods:Entity a rdfs:Class;
+  rdfs:subClassOf bods:CorporateAgent .
+
+bods:hasInterestIn a rdf:Property;
+  rdfs:domain bods:CorporateAgent;
+  rdfs:range bods:Entity .
+
+bods:bodsStatementId a rdf:Property;
+  rdfs:range rdfs:Literal .
+
+bods:bodsStatementDate a rdf:Property;
+  rdfs:range xsd:date .
+
+bods:bodsStatementSourceType a rdf:Property;
+  rdfs:range rdfs:Literal .
+
+bods:RegisteredEntity a rdfs:Class;
+  rdfs:subClassOf bods:Entity;
+  rdfs:label "Registered Entity";
+  rdfs:comment "Any legal entity created through an act of official registration. In most cases, registered entities will have an official issued identifier." .
+
+bods:LegalEntity a rdfs:Class;
+  rdfs:subClassOf bods:Entity;
+  rdfs:label "Legal entity";
+  rdfs:comment "A body with distinct legal personality, such as a government department or international institution, but which is not otherwise uniquely identified in some official register." .
+
+bods:Arrangement a rdfs:Class;
+  rdfs:subClassOf bods:Entity;
+  rdfs:label "Arrangement";
+  rdfs:comment "An artificial entity, created by agreements, contracts or other processes." .
+
+bods:AnonymousEntity a rdfs:Class;
+  rdfs:subClassOf bods:Entity;
+  rdfs:label "Anonymous entity";
+  rdfs:comment "An entity that has been identified, but for which no identifying information is being published." .
+
+bods:UnknownEntity a rdfs:Class;
+  rdfs:subClassOf bods:Entity;
+  rdfs:label "Unknown entity";
+  rdfs:comment "An entity that has not been identified." .
+
+bods:shareholding a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Shareholding";
+  rdfs:comment "An economic interest in an entity gained by holding shares." .
+
+bods:votingRights a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Voting rights";
+  rdfs:comment "A controlling interest in an entity gained by holding shares. Defined as the right of shareholders to vote on matters of corporate policy, including decisions on the makeup of the board of directors, issuing securities, initiating corporate actions and making substantial changes in the corporation's operations." .
+
+bods:appointmentOfBoard a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Appointment of board";
+  rdfs:comment "A controlling interest in an entity. Defined as the absolute right to appoint members of the board of directors." .
+
+bods:otherInfluenceOrControl a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Other influence or control";
+  rdfs:comment "Any influence or control in an entity that is distinct from being a shareholder" .
+
+bods:seniorManagingOfficial a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Senior managing official";
+  rdfs:comment "A controlling interest in an entity gained by employment. Defined as the person who exercises control over the management of the entity." .
+
+bods:settlorOfTrust a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Settlor of trust";
+  rdfs:comment "A controlling interest in a trust. Defined as the person who gives property into trust for the benefit of beneficiaries. In some legal systems, a settlor is also referred to as a trustor, or occasionally, a grantor or donor." .
+
+bods:trusteeOfTrust a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Trustee of a trust.";
+  rdfs:comment "A controlling interest in a trust. Defined as a person or firm that holds and administers property or assets for the benefit of a third party." .
+
+bods:protectorOfTrust a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Protector of a trust";
+  rdfs:comment "A controlling interest in a trust. Defined as a person appointed under the trust instrument to direct or restrain the trustees in relation to their administration of the trust." .
+
+bods:beneficiaryOfTrust a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Beneficiary of a trust";
+  rdfs:comment "An economic interest in a trust. Defined as a person or legal entity who profits from a trust's holdings or activities." .
+
+bods:otherInfluenceOrControlOfTrust a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Other influence or control of a trust";
+  rdfs:comment "Any influence or control in a trust that is distinct from being a settlor, trustee, protector or beneficiary." .
+
+bods:rightsToSurplusAssetsOnDissolution a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Rights to surplus assets on dissolution";
+  rdfs:comment "The right to a share in the amount of an asset or resource that exceeds the portion that is utilized upon the winding up of an entity." .
+
+bods:rightsToProfitOrIncome a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Rights to receive profits or income";
+  rdfs:comment "An economic interest in an entity. Defined as beneficial ownership rights beyond those otherwise implied by ownership structures that are granted by contract." .
+
+bods:rightsGrantedByContract a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Rights granted by contract";
+  rdfs:comment "An interest that is granted by contract." .
+
+bods:conditionalRightsGrantedByContract a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Conditional rights granted by contract";
+  rdfs:comment "An interest that exists only if some contractual condition is met.\"" .

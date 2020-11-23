@@ -1,0 +1,115 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix bods: <http://bods.openownership.org/vocabulary/> .
+@prefix bods-res: <http://bods.openownership.org/resource/> .
+
+bods:CorporateAgent a rdfs:Class;
+  owl:equivalentClass foaf:Agent .
+
+bods:Person a rdfs:Class;
+  rdfs:subClassOf bods:CorporateAgent;
+  owl:equivalentClass foaf:Person .
+
+bods:Entity a rdfs:Class;
+  rdfs:subClassOf bods:CorporateAgent .
+
+bods:hasInterestIn a rdf:Property;
+  rdfs:domain bods:CorporateAgent;
+  rdfs:range bods:Entity .
+
+bods:bodsStatementId a rdf:Property;
+  rdfs:range rdfs:Literal .
+
+bods:bodsStatementDate a rdf:Property;
+  rdfs:range xsd:date .
+
+bods:bodsStatementSourceType a rdf:Property;
+  rdfs:range rdfs:Literal .
+
+bods:RegisteredEntity a rdfs:Class;
+  rdfs:subClassOf bods:Entity;
+  rdfs:label "Registered Entity";
+  rdfs:comment "Any legal entity created through an act of official registration. In most cases, registered entities will have an official issued identifier." .
+
+bods:LegalEntity a rdfs:Class;
+  rdfs:subClassOf bods:Entity;
+  rdfs:label "Legal entity";
+  rdfs:comment "A body with distinct legal personality, such as a government departments or international institutions, but which is not otherwise uniquely identified in some official register." .
+
+bods:Arrangement a rdfs:Class;
+  rdfs:subClassOf bods:Entity;
+  rdfs:label "Arrangement";
+  rdfs:comment "An artificial entity, created by agreements, contracts or other processes." .
+
+bods:AnonymousEntity a rdfs:Class;
+  rdfs:subClassOf bods:Entity;
+  rdfs:label "Anonymous entity";
+  rdfs:comment "An entity that has been identified, but for which no identifying information is being published." .
+
+bods:UnknownEntity a rdfs:Class;
+  rdfs:subClassOf bods:Entity;
+  rdfs:label "Unknown entity";
+  rdfs:comment "An entity that has not been identified." .
+
+bods:shareholding a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Shareholding";
+  rdfs:comment "" .
+
+bods:votingRights a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Voting rights";
+  rdfs:comment "" .
+
+bods:appointmentOfBoard a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Appointment of board";
+  rdfs:comment "" .
+
+bods:influenceOrControl a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Influence or control";
+  rdfs:comment "" .
+
+bods:seniorManagingOfficial a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Senior managing official";
+  rdfs:comment "" .
+
+bods:settlorOfTrust a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Settlor of trust";
+  rdfs:comment "" .
+
+bods:trusteeOfTrust a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Trustee of a trust.";
+  rdfs:comment "" .
+
+bods:protectorOfTrust a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Protector of a trust";
+  rdfs:comment "" .
+
+bods:beneficiaryOfTrust a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Beneficiary of a trust";
+  rdfs:comment "" .
+
+bods:otherInfluenceOrControlOfTrust a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Other influence or control of a trust";
+  rdfs:comment "" .
+
+bods:rightsToSurplusAssets a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Rights to surplus assets";
+  rdfs:comment "" .
+
+bods:rightsToProfitOrIncome a rdf:Property;
+  rdfs:subPropertyOf bods:hasInterestIn;
+  rdfs:label "Rights to receive profits or income";
+  rdfs:comment "" .
