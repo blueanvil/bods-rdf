@@ -39,13 +39,15 @@ object JsonlToRdf {
                         if (interestedPartyId != null) {
                             processInterests(statement, interestedPartyId, statementHandler)
                         } else {
-                            log.warn("Statement $statementId has no interested party")
+//                            log.trace("Statement $statementId has no interested party")
                             withNoInterestedParty++
                         }
                     }
                 }
 
-                if (count % 1_000_000 == 0L) log.info("Processed $count BODS statements")
+                if ( count % 1_000_000 == 0L) {
+                    log.info("Processed $count BODS statements")
+                }
             }
         }
 
