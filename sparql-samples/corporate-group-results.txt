@@ -1,0 +1,67 @@
+groupMember,groupMemberName
+http://bods.openownership.org/resource/openownership-register-8609166727037701049,XEROX UK HOLDINGS LIMITED
+http://bods.openownership.org/resource/openownership-register-10954503731383011973,XEROX OVERSEAS HOLDINGS LIMITED
+http://bods.openownership.org/resource/openownership-register-1474615309287037254,XEROX TRADING ENTERPRISES LIMITED
+http://bods.openownership.org/resource/openownership-register-14602505565319238915,TRITON BUSINESS FINANCE LIMITED
+http://bods.openownership.org/resource/openownership-register-8522934835042336784,XEROX LIMITED
+http://bods.openownership.org/resource/openownership-register-12986006158906472022,XEROX BUSINESS EQUIPMENT LIMITED
+http://bods.openownership.org/resource/openownership-register-14388500384357810044,XRO LIMITED
+http://bods.openownership.org/resource/openownership-register-16663926980141696485,XEROX CAPITAL (EUROPE) LIMITED
+http://bods.openownership.org/resource/openownership-register-15007066538116354871,XEROX EXPORTS LIMITED
+http://bods.openownership.org/resource/openownership-register-13104613859790022539,XEROX PENSIONS LIMITED
+http://bods.openownership.org/resource/openownership-register-6963877388307463062,XEROX PROPERTY SERVICES LIMITED
+http://bods.openownership.org/resource/openownership-register-5611160247118809144,CONTINUA LIMITED
+http://bods.openownership.org/resource/openownership-register-10175208432645226667,XEROX DISTRIBUTOR OPERATIONS LIMITED
+http://bods.openownership.org/resource/openownership-register-17279452002292403899,XEROX PROFESSIONAL SERVICES LIMITED
+http://bods.openownership.org/resource/openownership-register-12211038322418965754,NEWFIELD INFORMATION TECHNOLOGY LIMITED
+http://bods.openownership.org/resource/openownership-register-14764203622301548926,XEROX MAILING SYSTEMS LIMITED
+http://bods.openownership.org/resource/openownership-register-9449230987994070950,XEROX COMPUTER SERVICES LIMITED
+http://bods.openownership.org/resource/openownership-register-13026896278727736699,XRI LIMITED
+http://bods.openownership.org/resource/openownership-register-611598824676169462,NEMO (AKS) LIMITED
+http://bods.openownership.org/resource/openownership-register-1857108958477068166,XEROX (UK) LIMITED
+http://bods.openownership.org/resource/openownership-register-18429051215457822890,CONCEPT GROUP LIMITED
+http://bods.openownership.org/resource/openownership-register-5084608337953813837,XEROX IBS NI LIMITED
+http://bods.openownership.org/resource/openownership-register-10741334198237736903,ICG-LONGBOW XEROX SENIOR DEBT INVESTMENTS NO.2 LLP
+http://bods.openownership.org/resource/openownership-register-9351372370563855077,CONTINUA SANCTUM LIMITED
+http://bods.openownership.org/resource/openownership-register-3836047225738273823,RRXH LIMITED
+http://bods.openownership.org/resource/openownership-register-9417962693198658054,ALTODIGITAL NETWORKS LIMITED
+http://bods.openownership.org/resource/openownership-register-1710941592913912933,ITEC CONNECT LTD
+http://bods.openownership.org/resource/openownership-register-13061757995887162872,BESSEMER TRUST LIMITED
+http://bods.openownership.org/resource/openownership-register-10224304237507855616,XEROX FINANCE LIMITED
+http://bods.openownership.org/resource/openownership-register-3118306249918256886,RRXO LIMITED
+http://bods.openownership.org/resource/openownership-register-4861910729415617151,RRXIL LIMITED
+http://bods.openownership.org/resource/openownership-register-17146903156243973707,COPYFAX DIGITAL SOLUTIONS LIMITED
+http://bods.openownership.org/resource/openownership-register-3859790154601697861,ALT-P LIMITED
+http://bods.openownership.org/resource/openownership-register-4196975837490949837,HI-TECH BUSINESS MACHINES LIMITED
+http://bods.openownership.org/resource/openownership-register-2829247754881946512,DATADENE LIMITED
+http://bods.openownership.org/resource/openownership-register-8590656731866167541,C B S CENTRAL LIMITED
+http://bods.openownership.org/resource/openownership-register-11914371388258675524,PRO-COPY LIMITED
+http://bods.openownership.org/resource/openownership-register-12241137001731385938,TECHCENTRAL SERVICES LIMITED
+http://bods.openownership.org/resource/openownership-register-17282468114270899587,FUSION BUSINESS SERVICES LIMITED
+http://bods.openownership.org/resource/openownership-register-8174125238784516524,PLATINUM DIGITAL PRINT SOLUTIONS LIMITED
+http://bods.openownership.org/resource/openownership-register-10532193109080755888,ALTODIGITAL UK LIMITED
+http://bods.openownership.org/resource/openownership-register-9698284206577864351,QUADTRONIX BUSINESS SYSTEMS LIMITED
+http://bods.openownership.org/resource/openownership-register-8535365787657177448,TECH CENTRAL LONDON LTD
+http://bods.openownership.org/resource/openownership-register-18366896993813770868,THREE COUNTIES BUSINESS MACHINES LIMITED
+http://bods.openownership.org/resource/openownership-register-14471083052171212290,INDEPENDENT DOCUMENT SYSTEMS LIMITED
+http://bods.openownership.org/resource/openownership-register-3613367780530879114,WEST HAM (USA) LIMITED
+http://bods.openownership.org/resource/openownership-register-2672315250421287104,ALTODIGITAL HOLDINGS LIMITED
+http://bods.openownership.org/resource/openownership-register-7192917791043052735,CF SYSTEMS U.K. LIMITED
+http://bods.openownership.org/resource/openownership-register-1651905938642241706,FUSION BUSINESS SYSTEMS LIMITED
+http://bods.openownership.org/resource/openownership-register-9863149052788512285,ITECH MANCHESTER LIMITED
+http://bods.openownership.org/resource/openownership-register-3356718357324629512,COPYRITE BUSINESS SOLUTIONS (HOLDINGS) LIMITED
+http://bods.openownership.org/resource/openownership-register-5190081323474417924,STEM NETWORKS LIMITED
+http://bods.openownership.org/resource/openownership-register-2481881685667258099,REFLEX DIGITAL SOLUTIONS (UK) LTD
+http://bods.openownership.org/resource/openownership-register-4435345768999606337,TIME BUSINESS SYSTEMS LIMITED
+http://bods.openownership.org/resource/openownership-register-14293523328256290492,MAIL A DOC LIMITED
+http://bods.openownership.org/resource/openownership-register-12294631724820724723,CITRUS DIGITAL LIMITED
+http://bods.openownership.org/resource/openownership-register-13353744310788083673,CRITERION IT LTD.
+http://bods.openownership.org/resource/openownership-register-14971987172394094664,UNA-STEM LIMITED
+http://bods.openownership.org/resource/openownership-register-16303081865871548081,ITECH IT SERVICES LIMITED
+http://bods.openownership.org/resource/openownership-register-8219726833086552130,COPYRITE BUSINESS SOLUTIONS LIMITED
+http://bods.openownership.org/resource/openownership-register-4855995767962039068,BACK2BUSINESS LIMITED
+http://bods.openownership.org/resource/openownership-register-2958248257484915763,A B S DIGITAL LIMITED
+http://bods.openownership.org/resource/openownership-register-15135286221412767381,TOTAL OFFICE TECHNOLOGIES LTD.
+http://bods.openownership.org/resource/openownership-register-10098974402075667457,COPYRITE COMMUNICATIONS LTD
+http://bods.openownership.org/resource/openownership-register-9727731186759584458,QUILVER BUSINESS SERVICES LIMITED
+http://bods.openownership.org/resource/openownership-register-17110093525394638584,OSPREY BUSINESS SYSTEMS LIMITED

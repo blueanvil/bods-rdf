@@ -5,15 +5,20 @@ PREFIX foaf:     <http://xmlns.com/foaf/0.1/>
 PREFIX bods:     <http://bods.openownership.org/vocabulary/>
 PREFIX bods-res: <http://bods.openownership.org/resource/>
 
-# This query returns the ultimate parent for the specified target
-# (openownership-register-13061757995887162872 / BESSEMER TRUST LIMITED)
+# This query returns all the entities which are part of the same corporate
+# group as the selected target (openownership-register-13061757995887162872 / BESSEMER TRUST LIMITED).
 
-SELECT ?ultimateParent ?ultimateParentName
+SELECT ?groupMember ?groupMemberName
 WHERE  {
     ?ultimateParent bods:hasInterestIn+ bods-res:openownership-register-13061757995887162872 .
     ?ultimateParent foaf:name ?ultimateParentName .
+    ?ultimateParent bods:hasInterestIn+ ?groupMember .
+    ?groupMember foaf:name ?groupMemberName .
+    ?groupMember rdf:type bods:Entity .
+
     FILTER NOT EXISTS {
        ?s bods:hasInterestIn ?ultimateParent .
     }
 }
+
 

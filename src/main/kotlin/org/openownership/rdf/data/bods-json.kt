@@ -14,7 +14,7 @@ internal fun JsonObject.statementId(): String = string("statementID")!!
 internal fun JsonObject.entityType(): IRI = BodsVocabulary.iri(string("entityType")!!.capitalize())
 internal fun JsonObject.subjectId(): String = obj("subject")!!.string("describedByEntityStatement")!!
 internal fun JsonObject.statementDate(): String = string("statementDate")!!
-internal fun JsonObject.sourceType(): String = obj("source")!!.array<String>("type")!!.joinToString(";")
+internal fun JsonObject.sourceType(): String = obj("source")?.array<String>("type")?.joinToString(";") ?: ""
 
 internal fun JsonObject.interestedPartyId(): String? {
     val ip = obj("interestedParty")

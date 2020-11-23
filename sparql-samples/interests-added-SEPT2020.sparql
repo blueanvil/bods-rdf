@@ -1,0 +1,24 @@
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf:     <http://xmlns.com/foaf/0.1/>
+PREFIX bods:     <http://bods.openownership.org/vocabulary/>
+PREFIX bods-res: <http://bods.openownership.org/resource/>
+
+# This query returns the first 100 results for the interest relationships added during
+# September 2020 (entity interested parties only)
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?parentName ?interest ?childName ?date
+WHERE  {
+    <<?parent ?interest ?child >> bods:bodsStatementDate ?date .
+    ?parent foaf:name ?parentName .
+    ?child foaf:name ?childName .
+    ?interest rdfs:subPropertyOf bods:hasInterestIn .
+
+    # Only list entities
+    ?parent rdf:type bods:Entity .
+
+    FILTER ((?date >= "2020-09-01"^^xsd:date) && (?date < "2020-10-01"^^xsd:date))
+}
+LIMIT 100

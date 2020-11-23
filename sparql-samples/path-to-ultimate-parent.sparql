@@ -1,0 +1,23 @@
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf:     <http://xmlns.com/foaf/0.1/>
+PREFIX bods:     <http://bods.openownership.org/vocabulary/>
+PREFIX bods-res: <http://bods.openownership.org/resource/>
+
+# This query returns the chain of connections between the specified target
+# (openownership-register-13061757995887162872 / BESSEMER TRUST LIMITED)
+# and its ultimate parent
+
+SELECT ?parentName ?childName
+WHERE {
+    ?parent bods:hasInterestIn ?child .
+    ?parent foaf:name ?parentName .
+    ?child  foaf:name ?childName .
+
+    { ?child bods:hasInterestIn+ bods-res:openownership-register-13061757995887162872 . }
+    UNION {
+       ?parent bods:hasInterestIn ?child .
+       FILTER (sameTerm(?child,bods-res:openownership-register-13061757995887162872))
+    }
+}

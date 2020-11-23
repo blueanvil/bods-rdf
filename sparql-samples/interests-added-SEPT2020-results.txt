@@ -1,0 +1,101 @@
+parentName,interest,childName,date
+REL UK HOLDINGS LIMITED,http://bods.openownership.org/vocabulary/shareholding,REL DAVIAN LTD,2020-09-01
+REL UK HOLDINGS LIMITED,http://bods.openownership.org/vocabulary/shareholding,REL 4 LTD,2020-09-10
+THE V FUND LIMITED,http://bods.openownership.org/vocabulary/shareholding,WHYTECLIFFE ROAD ESTATES LTD,2020-09-01
+THE V FUND LIMITED,http://bods.openownership.org/vocabulary/shareholding,BL ACTON 6 LIMITED,2020-09-14
+FRASERS GROUP PLC,http://bods.openownership.org/vocabulary/shareholding,FRASERS GROUP (EUROPEAN HOLDINGS) LIMITED,2020-09-24
+GATELEY INCORPORATIONS LIMITED,http://bods.openownership.org/vocabulary/shareholding,ENSCO 1381 LIMITED,2020-09-13
+GATELEY INCORPORATIONS LIMITED,http://bods.openownership.org/vocabulary/shareholding,ENSCO 1382 LIMITED,2020-09-14
+GATELEY INCORPORATIONS LIMITED,http://bods.openownership.org/vocabulary/shareholding,ENSCO 1384 LIMITED,2020-09-25
+GATELEY INCORPORATIONS LIMITED,http://bods.openownership.org/vocabulary/shareholding,ENSCO 1383 LIMITED,2020-09-25
+GATELEY INCORPORATIONS LIMITED,http://bods.openownership.org/vocabulary/shareholding,SPV ROCK LIMITED,2020-09-28
+DC13RV LIMITED,http://bods.openownership.org/vocabulary/shareholding,GUILT TRIP GROUP LIMITED,2020-09-22
+HOME INSTEAD SENIOR CARE UK LIMITED,http://bods.openownership.org/vocabulary/shareholding,HI RESALES LIMITED,2020-09-15
+SANSKARA LTD,http://bods.openownership.org/vocabulary/shareholding,ANANDA NURSERY & SCHOOL LTD,2020-09-25
+STATKRAFT UK LTD,http://bods.openownership.org/vocabulary/shareholding,SOAY LIMITED,2020-09-22
+STATKRAFT UK LTD,http://bods.openownership.org/vocabulary/shareholding,BALWEN LIMITED,2020-09-22
+BMR GRANTA PARK PROPCO LIMITED,http://bods.openownership.org/vocabulary/shareholding,GRANTA ENTRANCE LIMITED,2020-09-04
+VETPARTNERS LIMITED,http://bods.openownership.org/vocabulary/shareholding,THE HYPERTHYROID CAT CENTRE LIMITED,2020-09-21
+VETPARTNERS LIMITED,http://bods.openownership.org/vocabulary/shareholding,THE ARKVET PRACTICE LIMITED,2020-09-16
+PRINCIPAL HOTELS TOPCO 1 LIMITED,http://bods.openownership.org/vocabulary/shareholding,ONESPACE VENUES LIMITED,2020-09-30
+JADIN LIMITED,http://bods.openownership.org/vocabulary/shareholding,DALMORE HOLDINGS LIMITED,2020-09-15
+JADIN LIMITED,http://bods.openownership.org/vocabulary/shareholding,DALMORE GP HOLDINGS LIMITED,2020-09-15
+JADIN LIMITED,http://bods.openownership.org/vocabulary/shareholding,DALMORE CAPITAL LIMITED,2020-09-15
+JADIN LIMITED,http://bods.openownership.org/vocabulary/shareholding,DALMORE EXECUTIVE SERVICES LIMITED,2020-09-15
+DALMORE GP HOLDINGS LIMITED,http://bods.openownership.org/vocabulary/shareholding,TTE ASSETCO 2 LIMITED,2020-09-01
+MM&S JM LIMITED,http://bods.openownership.org/vocabulary/shareholding,DALMORE HOLDINGS LIMITED,2020-09-15
+MM&S JM LIMITED,http://bods.openownership.org/vocabulary/shareholding,DALMORE GP HOLDINGS LIMITED,2020-09-15
+MM&S JM LIMITED,http://bods.openownership.org/vocabulary/shareholding,DALMORE CAPITAL LIMITED,2020-09-15
+MM&S JM LIMITED,http://bods.openownership.org/vocabulary/shareholding,DALMORE EXECUTIVE SERVICES LIMITED,2020-09-15
+AGHINAGH LIMITED,http://bods.openownership.org/vocabulary/shareholding,DALMORE HOLDINGS LIMITED,2020-09-15
+AGHINAGH LIMITED,http://bods.openownership.org/vocabulary/shareholding,DALMORE GP HOLDINGS LIMITED,2020-09-15
+AGHINAGH LIMITED,http://bods.openownership.org/vocabulary/shareholding,DALMORE CAPITAL LIMITED,2020-09-15
+AGHINAGH LIMITED,http://bods.openownership.org/vocabulary/shareholding,DALMORE EXECUTIVE SERVICES LIMITED,2020-09-15
+Bank Of Montreal,http://bods.openownership.org/vocabulary/shareholding,BMO CAPITAL MARKETS LIMITED,2020-09-30
+THE CANADA LIFE GROUP (U.K.) LIMITED,http://bods.openownership.org/vocabulary/shareholding,CANADA LIFE PLATFORM LIMITED,2020-09-30
+NORTHERN FOODS LIMITED,http://bods.openownership.org/vocabulary/shareholding,BRAVO 1 HOLDCO LIMITED,2020-09-23
+22 NOMINEES LIMITED,http://bods.openownership.org/vocabulary/shareholding,DMWS 1140 LIMITED,2020-09-10
+22 NOMINEES LIMITED,http://bods.openownership.org/vocabulary/shareholding,DMWS 1141 LIMITED,2020-09-10
+22 NOMINEES LIMITED,http://bods.openownership.org/vocabulary/shareholding,DMWS 1142 LIMITED,2020-09-10
+22 NOMINEES LIMITED,http://bods.openownership.org/vocabulary/shareholding,DMWS 1145 LIMITED,2020-09-10
+22 NOMINEES LIMITED,http://bods.openownership.org/vocabulary/shareholding,DMWS 1143 LIMITED,2020-09-10
+22 NOMINEES LIMITED,http://bods.openownership.org/vocabulary/shareholding,DMWS 1144 LIMITED,2020-09-10
+ADDLESHAW GODDARD (SCOTLAND) SERVICES LIMITED,http://bods.openownership.org/vocabulary/shareholding,AGHOCO 5021 LIMITED,2020-09-30
+DYE & DURHAM (UK) LIMITED,http://bods.openownership.org/vocabulary/shareholding,R-SQUARED BIDCO LIMITED,2020-09-23
+HOUSING GROWTH PARTNERSHIP GP LLP,http://bods.openownership.org/vocabulary/shareholding,JAMES TAYLOR HOMES (NEWTON LONGVILLE) LIMITED,2020-09-07
+STESSA 3006 LTD,http://bods.openownership.org/vocabulary/shareholding,ST JAMES’ CENTRAL 8 LTD,2020-09-11
+GRAFENIA PLC,http://bods.openownership.org/vocabulary/shareholding,EGGSHELL SOLUTIONS LIMITED,2020-09-25
+Dordrecht,http://bods.openownership.org/vocabulary/shareholding,WELLL LIMITED,2020-09-01
+SYSTEM DAY (NOMINEES) LTD,http://bods.openownership.org/vocabulary/shareholding,FORTUNE TIME LTD,2020-09-11
+F C LASER TRUSTEES LIMITED,http://bods.openownership.org/vocabulary/shareholding,F C LASER HOLDINGS LIMITED,2020-09-21
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,WITHOUT CONTROL BUSINESS LIMITED,2020-09-03
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,OPEN ALL NIGHT BUSINESS LIMITED,2020-09-03
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,STAR SPACE BUSINESS LIMITED,2020-09-03
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,EVERY MINUTE LIMITED,2020-09-03
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,PROP UP MY BUSINESS LIMITED,2020-09-03
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,MASTER OF BUSINESS LIMITED,2020-09-03
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,FREEDOM FOR BUSINESS LIMITED,2020-09-03
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,FREE FOR BUSINESS LIMITED,2020-09-03
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,RISE ME UP BUSINESS LIMITED,2020-09-03
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,GO TO THE START LIMITED,2020-09-03
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,BELIEVING IN BUSINESS LIMITED,2020-09-09
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,MATCHING BUSINESS LIMITED,2020-09-09
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,GOLD BUSINESS LIMITED,2020-09-09
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,BEST BUSINESS BUYS LTD,2020-09-09
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,INVOLVED IN THE COMPANY LIMITED,2020-09-09
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,DREAMING LIMITED,2020-09-09
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,HARD WORKING BUSINESS LIMITED,2020-09-09
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,WAVES AROUND BUSINESS LIMITED,2020-09-10
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,STYLISH BUSINESS LIMITED,2020-09-10
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,ALWAYS AROUND BUSINESS LIMITED,2020-09-10
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,POPULAR BUSINESS LIMITED,2020-09-10
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,SUBLIME AV LTD,2020-09-14
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,HERE FOR BUSINESS LIMITED,2020-09-14
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,GENEROUS BUSINESS LIMITED,2020-09-14
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,GLITTER EVENTS LIMITED,2020-09-14
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,WINNING GOLD LIMITED,2020-09-14
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,EXTREME BUSINESS LIMITED,2020-09-14
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,BOTTLE IT UP LTD,2020-09-21
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,RESET FITNESS LTD,2020-09-21
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,WONDERFUL BUSINESS LIMITED,2020-09-22
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,YOU ARE THE ONE LIMITED,2020-09-22
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,WISDOM BUSINESS LIMITED,2020-09-22
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,BRING YOU UP LIMITED,2020-09-22
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,HILL SAMUEL CORPORATION PLC,2020-09-22
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,BETTER WITH YOU LIMITED,2020-09-23
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,CHANGING UP THE BUSINESS LIMITED,2020-09-24
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,FIRST COME BUSINESS LIMITED,2020-09-24
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,AUTUMN BUSINESS LIMITED,2020-09-24
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,ALL THE SMILES BUSINESS LIMITED,2020-09-24
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,SPARKLE BUSINESS LIMITED,2020-09-24
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,GAIN IT ALL LIMITED,2020-09-29
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,UNLIMITED OFFERS LTD,2020-09-29
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,RISE INTO GREATNESS LIMITED,2020-09-29
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,CREATE BUSINESS IDEAS LIMITED,2020-09-29
+CFS SECRETARIES LIMITED,http://bods.openownership.org/vocabulary/shareholding,GREAT ADVICE LIMITED,2020-09-30
+OW HOLDINGS LTD,http://bods.openownership.org/vocabulary/shareholding,JLO TRAINING LIMITED,2020-09-15
+PIRTEK (UK) LIMITED,http://bods.openownership.org/vocabulary/shareholding,CH HYDRAULICS LIMITED,2020-09-25
+N HOLDING (LON) LTD,http://bods.openownership.org/vocabulary/shareholding,HNLW LTD,2020-09-21
+N HOLDING (LON) LTD,http://bods.openownership.org/vocabulary/shareholding,DRLT LTD,2020-09-21
+N HOLDING (LON) LTD,http://bods.openownership.org/vocabulary/shareholding,SLGH LTD,2020-09-23
+N HOLDING (LON) LTD,http://bods.openownership.org/vocabulary/shareholding,DRMN LTD,2020-09-23
