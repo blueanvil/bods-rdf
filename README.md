@@ -20,7 +20,7 @@ gradle jsonlToRdf --args="--input=statements.latest.jsonl --output=my-data.ttls"
 ```
 
 ## SPARQL Samples
-Please check the `sparql-samples` directory for the complete list of working SPARQL queries. 
+Please check the `sparql-examples` directory for the complete list of working SPARQL queries and some sample output. 
 
 ## Ingesting BODS JSON data into an RDF repository
 The test `BodsRdfIngestionTest` is an example written in Kotlin which converts BODS JSON data and ingests it
