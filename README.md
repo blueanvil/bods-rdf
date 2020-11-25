@@ -1,4 +1,9 @@
 # An RDF vocabulary for the BODS JSON Schema
+Please read our detailed proposal for the BODS RDF Vocabulary: https://docs.google.com/document/d/1gZVPBXfqC72WHPBEkWhzg4Cik8FtHQhfG3SPcnvFn3c
+
+## RDF Vocabulary definitions
+* https://github.com/blueanvil/bods-rdf/blob/main/vocabulary/openownership-vocabulary-0.1.0.ttl
+* https://github.com/blueanvil/bods-rdf/blob/main/vocabulary/openownership-vocabulary-0.2.0.ttl
 
 ## Generating the BODS RDF vocabulary
 The BODS vocabulary can be generated in a Turtle (.ttl) format from BODS JSON schema.
