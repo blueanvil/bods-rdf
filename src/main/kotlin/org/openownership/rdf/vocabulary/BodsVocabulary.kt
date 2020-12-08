@@ -20,7 +20,7 @@ object BodsVocabulary {
             .joinToString(""))
 
     val HAS_INTEREST_IN = iri("hasInterestIn")
-    val CORPORATE_AGENT = iri("CorporateAgent")
+    val PARTY = iri("Party")
     val PERSON = iri("Person")
     val ENTITY = iri("Entity")
     val ANNOTATION_STATEMENT = iri("bodsStatementId")

@@ -81,18 +81,18 @@ object BodsVocabularyGenerator {
     }
 
     private fun addTopLevelDefinitions(model: Model) {
-        model.add(BodsVocabulary.CORPORATE_AGENT, RDF.TYPE, RDFS.CLASS)
-        model.add(BodsVocabulary.CORPORATE_AGENT, OWL.EQUIVALENTCLASS, FOAF.AGENT)
+        model.add(BodsVocabulary.PARTY, RDF.TYPE, RDFS.CLASS)
+        model.add(BodsVocabulary.PARTY, OWL.EQUIVALENTCLASS, FOAF.AGENT)
 
         model.add(BodsVocabulary.PERSON, RDF.TYPE, RDFS.CLASS)
-        model.add(BodsVocabulary.PERSON, RDFS.SUBCLASSOF, BodsVocabulary.CORPORATE_AGENT)
+        model.add(BodsVocabulary.PERSON, RDFS.SUBCLASSOF, BodsVocabulary.PARTY)
         model.add(BodsVocabulary.PERSON, OWL.EQUIVALENTCLASS, FOAF.PERSON)
 
         model.add(BodsVocabulary.ENTITY, RDF.TYPE, RDFS.CLASS)
-        model.add(BodsVocabulary.ENTITY, RDFS.SUBCLASSOF, BodsVocabulary.CORPORATE_AGENT)
+        model.add(BodsVocabulary.ENTITY, RDFS.SUBCLASSOF, BodsVocabulary.PARTY)
 
         model.add(BodsVocabulary.HAS_INTEREST_IN, RDF.TYPE, RDF.PROPERTY)
-        model.add(BodsVocabulary.HAS_INTEREST_IN, RDFS.DOMAIN, BodsVocabulary.CORPORATE_AGENT)
+        model.add(BodsVocabulary.HAS_INTEREST_IN, RDFS.DOMAIN, BodsVocabulary.PARTY)
         model.add(BodsVocabulary.HAS_INTEREST_IN, RDFS.RANGE, BodsVocabulary.ENTITY)
 
         model.add(BodsVocabulary.ANNOTATION_STATEMENT, RDF.TYPE, RDF.PROPERTY)

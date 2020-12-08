@@ -6,18 +6,18 @@
 @prefix bods: <http://bods.openownership.org/vocabulary/> .
 @prefix bods-res: <http://bods.openownership.org/resource/> .
 
-bods:CorporateAgent a rdfs:Class;
+bods:Party a rdfs:Class;
   owl:equivalentClass foaf:Agent .
 
 bods:Person a rdfs:Class;
-  rdfs:subClassOf bods:CorporateAgent;
+  rdfs:subClassOf bods:Party;
   owl:equivalentClass foaf:Person .
 
 bods:Entity a rdfs:Class;
-  rdfs:subClassOf bods:CorporateAgent .
+  rdfs:subClassOf bods:Party .
 
 bods:hasInterestIn a rdf:Property;
-  rdfs:domain bods:CorporateAgent;
+  rdfs:domain bods:Party;
   rdfs:range bods:Entity .
 
 bods:bodsStatementId a rdf:Property;
