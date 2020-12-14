@@ -4,8 +4,7 @@ import org.eclipse.rdf4j.model.Statement
 import org.eclipse.rdf4j.repository.Repository
 import org.eclipse.rdf4j.rio.RDFFormat
 import org.eclipse.rdf4j.rio.Rio
-import org.openownership.rdf.vocabulary.BodsVocabulary
-import org.slf4j.LoggerFactory
+import org.openownership.rdf.vocabulary.BodsRdf
 import java.io.File
 import java.io.OutputStream
 
@@ -41,7 +40,7 @@ object BodsDataLoader {
     fun jsonlToRdf(jsonlFile: File, outputStream: OutputStream, format: RDFFormat) {
         val writer = Rio.createWriter(format, outputStream)
         writer.startRDF()
-        BodsVocabulary.addNamespaces(writer)
+        BodsRdf.addNamespaces(writer)
 
         JsonlToRdf.jsonlToRdf(jsonlFile) { statement ->
             writer.handleStatement(statement)

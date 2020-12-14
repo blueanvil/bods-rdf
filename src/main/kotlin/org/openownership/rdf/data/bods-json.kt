@@ -2,7 +2,7 @@ package org.openownership.rdf.data
 
 import com.beust.klaxon.JsonObject
 import org.eclipse.rdf4j.model.IRI
-import org.openownership.rdf.vocabulary.BodsVocabulary
+import org.openownership.rdf.vocabulary.BodsRdf
 
 /**
  * @author Cosmin Marginean
@@ -11,7 +11,7 @@ internal fun JsonObject.isEntity(): Boolean = string("statementType") == "entity
 internal fun JsonObject.isPerson(): Boolean = string("statementType") == "personStatement"
 internal fun JsonObject.isOwnershipCtrl(): Boolean = string("statementType") == "ownershipOrControlStatement"
 internal fun JsonObject.statementId(): String = string("statementID")!!
-internal fun JsonObject.entityType(): IRI = BodsVocabulary.iri(string("entityType")!!.capitalize())
+internal fun JsonObject.entityType(): IRI = BodsRdf.iri(string("entityType")!!.capitalize())
 internal fun JsonObject.subjectId(): String = obj("subject")!!.string("describedByEntityStatement")!!
 internal fun JsonObject.statementDate(): String = string("statementDate")!!
 internal fun JsonObject.sourceType(): String = obj("source")?.array<String>("type")?.joinToString(";") ?: ""

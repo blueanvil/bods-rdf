@@ -11,7 +11,7 @@ The `--schemaVersion` argument is required, and it points to a schema [release b
 This will download a zipball for the schema version branch and, by default, it will generate the vocabulary in a file
 `vocabulary/openownership-vocabulary-${schemaVersion}.ttl`. To specify a different location for the output, use the `--output` argument:
 ```
-gradle vocabulary --args="--schemaVersion=0.2.0"
+BodsVocabularyGenerator.kt:90
 gradle vocabulary --args="--schemaVersion=0.2.0 --output=my-vocabulary.ttl"
 ```
 

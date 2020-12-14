@@ -4,6 +4,7 @@ import org.apache.commons.io.IOUtils
 import org.slf4j.LoggerFactory
 import java.io.File
 import java.io.FileOutputStream
+import java.io.InputStream
 import java.nio.charset.Charset
 import java.nio.charset.StandardCharsets
 import java.util.*
@@ -36,4 +37,9 @@ internal fun unzip(zip: File, destDir: File, charset: Charset = StandardCharsets
             zipEntry = zis.nextEntry
         }
     }
+}
+
+fun resourceAsInput(classpathLocation: String): InputStream {
+    val classLoader = Thread.currentThread().contextClassLoader
+    return classLoader.getResourceAsStream(classpathLocation)
 }

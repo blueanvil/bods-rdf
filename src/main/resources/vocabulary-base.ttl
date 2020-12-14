@@ -1,0 +1,81 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix bods:     <http://bods.openownership.org/vocabulary/> .
+@prefix bods-res: <http://bods.openownership.org/resource/> .
+
+# Top-level classes
+bods:Party
+    rdf:type            rdfs:Class ;
+    owl:equivalentClass foaf:Agent .
+
+bods:Person
+    rdf:type            rdfs:Class ;
+    rdfs:subClassOf     bods:Party ;
+    owl:equivalentClass foaf:Person .
+
+bods:Entity
+    rdf:type        rdfs:Class ;
+    rdfs:subClassOf bods:Party .
+
+# Ownership or control statement and related properties
+bods:Statement
+    rdf:type rdfs:Class .
+
+bods:hasInterestedParty
+    rdf:type    rdf:Property ;
+    rdfs:domain bods:Statement ;
+    rdfs:range  bods:Party .
+
+bods:isInterestedParty
+    rdf:type      rdf:Property ;
+    owl:inverseOf bods:hasInterestedParty .
+
+bods:hasSubject
+    rdf:type    rdf:Property ;
+    rdfs:domain bods:Statement ;
+    rdfs:range  bods:Entity .
+
+bods:isSubject
+    rdf:type      rdf:Property ;
+    owl:inverseOf bods:hasSubject .
+
+bods:statesInterest
+    rdf:type    rdf:Property ;
+    rdfs:domain bods:Statement ;
+    rdfs:range  bods:Interest .
+
+bods:statedBy
+    rdf:type      rdf:Property ;
+    owl:inverseOf bods:statesInterest .
+
+bods:statementId
+    rdf:type    rdf:Property ;
+    rdfs:domain bods:Statement ;
+    rdfs:range  rdfs:Literal .
+
+bods:statementDate
+    rdf:type    rdf:Property ;
+    rdfs:domain bods:Statement ;
+    rdfs:range  xsd:Date .
+
+bods:sourceType
+    rdf:type    rdf:Property ;
+    rdfs:domain bods:Statement ;
+    rdfs:range  rdfs:Literal .
+
+# Interest
+bods:Interest
+    rdf:type rdfs:Class .
+
+bods:startDate
+    rdf:type    rdf:Property ;
+    rdfs:domain bods:Interest ;
+    rdfs:range  xsd:Date .
+
+bods:endDate
+    rdf:type    rdf:Property ;
+    rdfs:domain bods:Interest ;
+    rdfs:range  xsd:Date .
