@@ -2,7 +2,9 @@ package org.openownership.rdf.data
 
 import com.beust.klaxon.JsonObject
 import com.beust.klaxon.Parser
+import org.eclipse.rdf4j.model.BNode
 import org.eclipse.rdf4j.model.Statement
+import org.eclipse.rdf4j.model.impl.SimpleValueFactory
 import org.eclipse.rdf4j.model.vocabulary.FOAF
 import org.eclipse.rdf4j.model.vocabulary.RDF
 import org.openownership.rdf.BUFFER_1MB
@@ -36,10 +38,8 @@ object JsonlToRdf {
                     statement.isPerson() -> processPerson(statementHandler, statement)
                     statement.isOwnershipCtrl() -> {
                         val interestedPartyId = statement.interestedPartyId()
-                        if (interestedPartyId != null) {
-                            processInterests(statement, interestedPartyId, statementHandler)
-                        } else {
-                            log.trace("Statement $statementId has no interested party")
+                        processInterests(statement, interestedPartyId, statementHandler)
+                        if (interestedPartyId == null) {
                             withNoInterestedParty++
                         }
                     }
@@ -54,9 +54,9 @@ object JsonlToRdf {
         log.info("Finished processing $count BODS statements, $withNoInterestedParty with no interested party (ignored)")
     }
 
-    fun processInterests(statement: JsonObject, interestedPartyId: String, handler: (Statement) -> Unit) {
+    fun processInterests(statement: JsonObject, interestedPartyId: String?, handler: (Statement) -> Unit) {
         val entity = BodsRdf.resource(statement.subjectId())
-        val interestedParty = BodsRdf.resource(interestedPartyId)
+        val interestedParty = if (interestedPartyId != null) BodsRdf.resource(interestedPartyId) else SimpleValueFactory.getInstance().createBNode()
         val statementId = statement.statementId()
         val statementObject = BodsRdf.resource(statementId)
         handler(rdfStatement(statementObject, RDF.TYPE, BodsRdf.TYPE_STATEMENT))
