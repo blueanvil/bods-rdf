@@ -13,7 +13,7 @@ import java.io.OutputStream
  */
 object BodsDataLoader {
 
-    private const val STATEMENT_BATCH_SIZE = 10_000
+    private const val STATEMENT_BATCH_SIZE = 100_000
 
     fun loadJsonl(jsonlFile: File, rdfRepository: Repository) {
         rdfRepository.connection.use { connection ->
@@ -31,9 +31,9 @@ object BodsDataLoader {
         }
     }
 
-    fun jsonlToRdf(jsonlFile: File, outputFile: File) {
+    fun jsonlToRdf(jsonlFile: File, outputFile: File, format: RDFFormat) {
         outputFile.outputStream().use { outputStream ->
-            jsonlToRdf(jsonlFile, outputStream, RDFFormat.TURTLESTAR)
+            jsonlToRdf(jsonlFile, outputStream, format)
         }
     }
 

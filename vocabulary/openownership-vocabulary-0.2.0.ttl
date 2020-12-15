@@ -155,3 +155,4 @@ bods:ConditionalRightsGrantedByContract a rdfs:Class;
   rdfs:subClassOf bods:Interest;
   rdfs:label "Conditional rights granted by contract";
   rdfs:comment "An interest that exists only if some contractual condition is met.\"" .
+

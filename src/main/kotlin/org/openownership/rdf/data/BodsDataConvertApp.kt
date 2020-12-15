@@ -3,6 +3,7 @@ package org.openownership.rdf.data
 import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.required
+import org.eclipse.rdf4j.rio.RDFFormat
 import java.io.File
 
 /**
@@ -21,7 +22,7 @@ class BodsDataConvertRunner : CliktCommand() {
     private val output by option("--output")
 
     override fun run() {
-        val out = if (output != null) output else input.substring(0, input.lastIndexOf(".")) + ".ttls"
-        BodsDataLoader.jsonlToRdf(File(input), File(out))
+        val out = if (output != null) output else input.substring(0, input.lastIndexOf(".")) + ".ttl"
+        BodsDataLoader.jsonlToRdf(File(input), File(out), RDFFormat.TURTLE)
     }
 }
