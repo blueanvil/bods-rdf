@@ -62,7 +62,12 @@ object JsonlToRdf {
         handler(rdfStatement(statementObject, BodsRdf.PROP_INTERESTED_PARTY, interestedParty))
         handler(rdfStatement(statementObject, BodsRdf.PROP_SUBJECT, entity))
         handler(rdfStatement(statementObject, BodsRdf.PROP_STATEMENT_ID, statementId.literal()))
-        handler(rdfStatement(statementObject, BodsRdf.PROP_STATEMENT_DATE, statement.statementDate().literal()))
+
+        val statementDate = statement.statementDate()
+        if (statementDate != null) {
+            handler(rdfStatement(statementObject, BodsRdf.PROP_STATEMENT_DATE, statementDate.literal()))
+        }
+
         handler(rdfStatement(statementObject, BodsRdf.PROP_STATEMENT_SOURCE_TYPE, statement.sourceType().literal()))
 
         statement.array<JsonObject>("interests")?.forEachIndexed { index, interest ->
