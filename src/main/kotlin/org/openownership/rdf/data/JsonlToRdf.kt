@@ -2,7 +2,6 @@ package org.openownership.rdf.data
 
 import com.beust.klaxon.JsonObject
 import com.beust.klaxon.Parser
-import org.eclipse.rdf4j.model.BNode
 import org.eclipse.rdf4j.model.Statement
 import org.eclipse.rdf4j.model.impl.SimpleValueFactory
 import org.eclipse.rdf4j.model.vocabulary.FOAF
@@ -30,7 +29,6 @@ object JsonlToRdf {
         jsonlFile.bufferedReader(bufferSize = BUFFER_1MB).useLines { lines ->
             lines.forEach { line ->
                 val statement = jsonParser.parse(StringBuilder(line)) as JsonObject
-                val statementId = statement.statementId()
                 count++
 
                 when {
@@ -59,14 +57,26 @@ object JsonlToRdf {
         val interestedParty = if (interestedPartyId != null) BodsRdf.resource(interestedPartyId) else SimpleValueFactory.getInstance().createBNode()
         val statementId = statement.statementId()
         val statementObject = BodsRdf.resource(statementId)
+
         handler(rdfStatement(statementObject, RDF.TYPE, BodsRdf.TYPE_STATEMENT))
         handler(rdfStatement(statementObject, BodsRdf.PROP_INTERESTED_PARTY, interestedParty))
         handler(rdfStatement(statementObject, BodsRdf.PROP_SUBJECT, entity))
         handler(rdfStatement(statementObject, BodsRdf.PROP_STATEMENT_ID, statementId.literal()))
+        handler(rdfStatement(statementObject, BodsRdf.PROP_STATEMENT_DATE, statement.statementDate().literal()))
+        handler(rdfStatement(statementObject, BodsRdf.PROP_STATEMENT_SOURCE_TYPE, statement.sourceType().literal()))
+
         statement.array<JsonObject>("interests")?.forEachIndexed { index, interest ->
             val interestType = BodsRdf.interestType(interest.string("type")!!)
             val interestObject = BodsRdf.resource("${statementId}_$index")
             handler(rdfStatement(interestObject, RDF.TYPE, interestType))
+            val startDate = interest.startDate()
+            if (startDate != null) {
+                handler(rdfStatement(interestObject, BodsRdf.PROP_INTEREST_START_DATE, startDate.literal()))
+            }
+            val endDate = interest.endDate()
+            if (endDate != null) {
+                handler(rdfStatement(interestObject, BodsRdf.PROP_INTEREST_END_DATE, endDate.literal()))
+            }
             handler(rdfStatement(statementObject, BodsRdf.PROP_STATES_INTEREST, interestObject))
         }
     }

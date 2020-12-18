@@ -14,6 +14,8 @@ internal fun JsonObject.statementId(): String = string("statementID")!!
 internal fun JsonObject.entityType(): IRI = BodsRdf.iri(string("entityType")!!.capitalize())
 internal fun JsonObject.subjectId(): String = obj("subject")!!.string("describedByEntityStatement")!!
 internal fun JsonObject.statementDate(): String = string("statementDate")!!
+internal fun JsonObject.startDate(): String? = string("startDate")
+internal fun JsonObject.endDate(): String? = string("endDate")
 internal fun JsonObject.sourceType(): String = obj("source")?.array<String>("type")?.joinToString(";") ?: ""
 
 internal fun JsonObject.interestedPartyId(): String? {

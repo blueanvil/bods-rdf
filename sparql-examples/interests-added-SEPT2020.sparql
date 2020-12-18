@@ -5,13 +5,14 @@ PREFIX foaf:     <http://xmlns.com/foaf/0.1/>
 PREFIX bods:     <http://bods.openownership.org/vocabulary/>
 PREFIX bods-res: <http://bods.openownership.org/resource/>
 
-# This query returns the first 100 results for the interest relationships added during
-# September 2020 (entity interested parties only)
+# This query returns the first 100 results for the statements added during September 2020 (entity interested parties only)
 
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT ?parentName ?interest ?childName ?date
 WHERE  {
-    <<?parent ?interest ?child >> bods:bodsStatementDate ?date .
+    ?statement bods:hasInterestedParty ?parent .
+    ?statement bods:hasSubject ?child .
+    ?statement bods:statementDate ?date .
     ?parent foaf:name ?parentName .
     ?child foaf:name ?childName .
     ?interest rdfs:subPropertyOf bods:hasInterestIn .

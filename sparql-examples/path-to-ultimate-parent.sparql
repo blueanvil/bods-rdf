@@ -12,6 +12,8 @@ PREFIX bods-res: <http://bods.openownership.org/resource/>
 SELECT ?parentName ?childName
 WHERE {
     ?parent bods:hasInterestIn ?child .
+    ?parent rdf:type bods:Entity .
+    ?child rdf:type bods:Entity .
     ?parent foaf:name ?parentName .
     ?child  foaf:name ?childName .
 

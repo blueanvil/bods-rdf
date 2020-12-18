@@ -30,12 +30,11 @@ object BodsRdf {
     val PROP_INTERESTED_PARTY = iri("hasInterestedParty")
     val PROP_SUBJECT = iri("hasSubject")
     val PROP_STATES_INTEREST = iri("statesInterest")
-    val PROP_SUBJECT_ID = iri("statementId")
     val PROP_STATEMENT_DATE = iri("statementDate")
     val PROP_STATEMENT_ID = iri("statementId")
-    val PROP_SOURCE_TYPE = iri("sourceType")
-    val PROP_START_DATE = iri("startDate")
-    val PROP_END_DATE = iri("endDate")
+    val PROP_STATEMENT_SOURCE_TYPE = iri("sourceType")
+    val PROP_INTEREST_START_DATE = iri("startDate")
+    val PROP_INTEREST_END_DATE = iri("endDate")
 
     val REQUIRED_NAMESPACES = mapOf(
             RDF.PREFIX to RDF.NAMESPACE,

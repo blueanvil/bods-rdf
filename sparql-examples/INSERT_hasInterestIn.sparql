@@ -5,11 +5,10 @@ PREFIX foaf:     <http://xmlns.com/foaf/0.1/>
 PREFIX bods:     <http://bods.openownership.org/vocabulary/>
 PREFIX bods-res: <http://bods.openownership.org/resource/>
 
-SELECT ?ultimateParent ?ultimateParentName
-WHERE  {
-    ?ultimateParent (bods:isInterestedParty/bods:hasSubject)+ bods-res:openownership-register-222572451155121771 .
-    ?ultimateParent foaf:name ?ultimateParentName .
-    FILTER NOT EXISTS {
-       ?s bods:hasSubject ?ultimateParent .
-    }
+INSERT {
+    ?interestedParty bods:hasInterestIn ?subject .
 }
+WHERE {
+    ?statement bods:hasInterestedParty ?interestedParty .
+    ?statement bods:hasSubject ?subject .
+};

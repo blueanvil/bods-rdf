@@ -79,3 +79,9 @@ bods:endDate
     rdf:type    rdf:Property ;
     rdfs:domain bods:Interest ;
     rdfs:range  xsd:Date .
+
+# Has-interest-in
+bods:hasInterestIn
+    rdf:type    rdf:Property ;
+    rdfs:domain bods:Party ;
+    rdfs:range  bods:Entity .

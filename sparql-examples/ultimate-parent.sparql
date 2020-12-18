@@ -12,8 +12,10 @@ SELECT ?ultimateParent ?ultimateParentName
 WHERE  {
     ?ultimateParent bods:hasInterestIn+ bods-res:openownership-register-13061757995887162872 .
     ?ultimateParent foaf:name ?ultimateParentName .
+    ?ultimateParent rdf:type bods:Entity .
     FILTER NOT EXISTS {
        ?s bods:hasInterestIn ?ultimateParent .
+       ?s rdf:type bods:Entity .
     }
 }
 
