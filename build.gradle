@@ -57,6 +57,5 @@ task vocabulary(type: JavaExec) {
 task jsonlToRdf(type: JavaExec) {
     group = "Execution"
     classpath = sourceSets.main.runtimeClasspath
-    main = "org.openownership.rdf.data.BodsDataConvertApp"
-    jvmArgs = ['-Xdebug', '-Xrunjdwp:server=y,transport=dt_socket,address=5005,suspend=n']
+    main = "org.openownership.rdf.data.BodsJsonToRdfApp"
 }

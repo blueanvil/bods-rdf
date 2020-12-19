@@ -11,4 +11,4 @@ INSERT {
 WHERE {
     ?statement bods:hasInterestedParty ?interestedParty .
     ?statement bods:hasSubject ?subject .
-};
+}

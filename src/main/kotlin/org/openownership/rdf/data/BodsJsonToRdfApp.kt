@@ -9,20 +9,20 @@ import java.io.File
 /**
  * @author Cosmin Marginean
  */
-object BodsDataConvertApp {
+object BodsJsonToRdfApp {
 
     @JvmStatic
     fun main(args: Array<String>) {
-        BodsDataConvertRunner().main(args)
+        BodsJsonToRdfCmd().main(args)
     }
 }
 
-class BodsDataConvertRunner : CliktCommand() {
+class BodsJsonToRdfCmd : CliktCommand() {
     private val input by option("--input").required()
     private val output by option("--output")
 
     override fun run() {
         val out = if (output != null) output else input.substring(0, input.lastIndexOf(".")) + ".ttl"
-        BodsDataLoader.jsonlToRdf(File(input), File(out), RDFFormat.TURTLE)
+        BodsJsonToRdf.jsonlToRdf(File(input), File(out), RDFFormat.TURTLE)
     }
 }

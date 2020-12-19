@@ -35,6 +35,7 @@ object BodsRdf {
     val PROP_STATEMENT_SOURCE_TYPE = iri("sourceType")
     val PROP_INTEREST_START_DATE = iri("startDate")
     val PROP_INTEREST_END_DATE = iri("endDate")
+    val PROP_HAS_INTEREST_IN = iri("hasInterestIn")
 
     val REQUIRED_NAMESPACES = mapOf(
             RDF.PREFIX to RDF.NAMESPACE,

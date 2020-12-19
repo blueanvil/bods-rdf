@@ -13,7 +13,7 @@ WHERE  {
     ?ultimateParent bods:hasInterestIn+ bods-res:openownership-register-13061757995887162872 .
     ?ultimateParent foaf:name ?ultimateParentName .
     ?ultimateParent bods:hasInterestIn+ ?groupMember .
-    ?groupMember foaf:name ?groupMemberName .
+    ?groupMember foaf:namee ?groupMemberName .
     ?groupMember rdf:type bods:Entity .
 
     FILTER NOT EXISTS {

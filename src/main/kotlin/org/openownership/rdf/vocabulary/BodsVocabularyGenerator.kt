@@ -28,6 +28,10 @@ import kotlin.streams.toList
  */
 object BodsVocabularyGenerator {
 
+    private const val CODE = "code"
+    private const val TITILE = "title"
+    private const val DESCRIPTION = "description"
+
     private val log = LoggerFactory.getLogger(BodsVocabularyGenerator::class.java)
     private val httpClient = OkHttpClient()
     private val tempDir = File(System.getProperty("java.io.tmpdir"))
@@ -93,22 +97,22 @@ object BodsVocabularyGenerator {
     private fun addEntityTypes(packageDir: File, model: Model) {
         csvRows(packageDir, "schema/codelists/entityType.csv")
                 .forEach { row ->
-                    val entityType = BodsRdf.entityType(row.getField("code")!!)
+                    val entityType = BodsRdf.entityType(row.getField(CODE)!!)
                     model.add(entityType, RDF.TYPE, RDFS.CLASS)
                     model.add(entityType, RDFS.SUBCLASSOF, BodsRdf.TYPE_ENTITY)
-                    model.add(entityType, RDFS.LABEL, row.getField("title")!!.literal())
-                    model.add(entityType, RDFS.COMMENT, row.getField("description")!!.literal())
+                    model.add(entityType, RDFS.LABEL, row.getField(TITILE)!!.literal())
+                    model.add(entityType, RDFS.COMMENT, row.getField(DESCRIPTION)!!.literal())
                 }
     }
 
     private fun addInterestTypes(packageDir: File, model: Model) {
         csvRows(packageDir, "schema/codelists/interestType.csv")
                 .forEach { row ->
-                    val interestType = BodsRdf.interestType(row.getField("code")!!)
+                    val interestType = BodsRdf.interestType(row.getField(CODE)!!)
                     model.add(interestType, RDF.TYPE, RDFS.CLASS)
                     model.add(interestType, RDFS.SUBCLASSOF, BodsRdf.TYPE_INTEREST)
-                    model.add(interestType, RDFS.LABEL, row.getField("title")!!.literal())
-                    model.add(interestType, RDFS.COMMENT, (row.getField("description") ?: "").literal())
+                    model.add(interestType, RDFS.LABEL, row.getField(TITILE)!!.literal())
+                    model.add(interestType, RDFS.COMMENT, (row.getField(DESCRIPTION) ?: "").literal())
                 }
     }
 
