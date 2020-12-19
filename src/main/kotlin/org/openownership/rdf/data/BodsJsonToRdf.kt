@@ -122,7 +122,7 @@ object BodsJsonToRdf {
 
         val statementDate = statement.statementDate()
         if (statementDate != null) {
-            handler(rdfStatement(statementObject, BodsRdf.PROP_STATEMENT_DATE, statementDate.literal()))
+            handler(rdfStatement(statementObject, BodsRdf.PROP_STATEMENT_DATE, statementDate.literalDate()))
         }
 
         handler(rdfStatement(statementObject, BodsRdf.PROP_STATEMENT_SOURCE_TYPE, statement.sourceType().literal()))

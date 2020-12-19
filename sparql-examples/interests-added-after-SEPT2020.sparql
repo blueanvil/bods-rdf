@@ -1,0 +1,23 @@
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf:     <http://xmlns.com/foaf/0.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX bods:     <http://bods.openownership.org/vocabulary/>
+PREFIX bods-res: <http://bods.openownership.org/resource/>
+
+# This query returns the first 100 results for the interests which started after 1st September 2020
+
+SELECT ?parentName ?childName ?interestStartDate
+WHERE  {
+    ?statement bods:hasInterestedParty ?parent .
+    ?statement bods:hasSubject ?child .
+    ?statement bods:statesInterest ?interest .
+    ?interest bods:startDate ?interestStartDate .
+    ?parent foaf:name ?parentName .
+    ?child foaf:name ?childName .
+
+    FILTER (?interestStartDate >= "2020-09-01"^^xsd:date)
+}
+LIMIT 100
+
