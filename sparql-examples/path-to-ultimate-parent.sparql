@@ -7,7 +7,7 @@ PREFIX bods-res: <http://bods.openownership.org/resource/>
 
 # This query returns the chain of connections between the specified target
 # (openownership-register-13061757995887162872 / BESSEMER TRUST LIMITED)
-# and its ultimate parent
+# and its ultimate parent entity
 
 SELECT ?parentName ?childName
 WHERE {

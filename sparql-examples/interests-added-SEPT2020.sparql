@@ -6,7 +6,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX bods:     <http://bods.openownership.org/vocabulary/>
 PREFIX bods-res: <http://bods.openownership.org/resource/>
 
-# This query returns the first 100 results for the statements added during September 2020 (entity interested parties only)
+# This query returns the first 100 results for the statements added in September 2020
+# (with interested parties which are entities)
 
 SELECT ?parentName ?interest ?childName ?date
 WHERE  {

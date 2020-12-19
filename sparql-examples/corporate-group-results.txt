@@ -9,6 +9,7 @@ http://bods.openownership.org/resource/openownership-register-143885003843578100
 http://bods.openownership.org/resource/openownership-register-16663926980141696485,XEROX CAPITAL (EUROPE) LIMITED
 http://bods.openownership.org/resource/openownership-register-15007066538116354871,XEROX EXPORTS LIMITED
 http://bods.openownership.org/resource/openownership-register-13104613859790022539,XEROX PENSIONS LIMITED
+http://bods.openownership.org/resource/openownership-register-4269374957779799127,THE XEROX (UK) TRUST
 http://bods.openownership.org/resource/openownership-register-6963877388307463062,XEROX PROPERTY SERVICES LIMITED
 http://bods.openownership.org/resource/openownership-register-5611160247118809144,CONTINUA LIMITED
 http://bods.openownership.org/resource/openownership-register-10175208432645226667,XEROX DISTRIBUTOR OPERATIONS LIMITED
@@ -26,6 +27,7 @@ http://bods.openownership.org/resource/openownership-register-935137237056385507
 http://bods.openownership.org/resource/openownership-register-3836047225738273823,RRXH LIMITED
 http://bods.openownership.org/resource/openownership-register-9417962693198658054,ALTODIGITAL NETWORKS LIMITED
 http://bods.openownership.org/resource/openownership-register-1710941592913912933,ITEC CONNECT LTD
+http://bods.openownership.org/resource/openownership-register-7074880113536257022,ARENA GROUP LIMITED
 http://bods.openownership.org/resource/openownership-register-13061757995887162872,BESSEMER TRUST LIMITED
 http://bods.openownership.org/resource/openownership-register-10224304237507855616,XEROX FINANCE LIMITED
 http://bods.openownership.org/resource/openownership-register-3118306249918256886,RRXO LIMITED
