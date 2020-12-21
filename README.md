@@ -11,7 +11,6 @@ The `--schemaVersion` argument is required, and it points to a schema [release b
 This will download a zipball for the schema version branch and, by default, it will generate the vocabulary in a file
 `vocabulary/openownership-vocabulary-${schemaVersion}.ttl`. To specify a different location for the output, use the `--output` argument:
 ```
-gradle vocabulary --args="--schemaVersion=0.2.0"
 gradle vocabulary --args="--schemaVersion=0.2.0 --output=my-vocabulary.ttl"
 ```
 
@@ -28,5 +27,5 @@ gradle jsonlToRdf --args="--input=statements.latest.jsonl --output=my-data.ttls"
 Please check the `sparql-examples` directory for the complete list of working SPARQL queries and some sample output. 
 
 ## Ingesting BODS JSON data into an RDF repository
-The test `BodsRdfIngestionTest` is an example written in Kotlin which converts BODS JSON data and ingests it
+`BodsRdfIngestionTest` is an example written in Kotlin which converts BODS JSON data and ingests it
 into an RDF repository (using [GraphDB](https://www.ontotext.com/products/graphdb/)).

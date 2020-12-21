@@ -12,11 +12,11 @@ object BodsVocabularyGeneratorApp {
 
     @JvmStatic
     fun main(args: Array<String>) {
-        BodsVocabularyGeneratorRunner().main(args)
+        BodsVocabularyGeneratorCmd().main(args)
     }
 }
 
-class BodsVocabularyGeneratorRunner : CliktCommand() {
+class BodsVocabularyGeneratorCmd : CliktCommand() {
     private val schemaVersion by option("--schemaVersion").required()
     private val outputFilePath by option("--output")
 

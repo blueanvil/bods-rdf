@@ -6,19 +6,21 @@ PREFIX bods:     <http://bods.openownership.org/vocabulary/>
 PREFIX bods-res: <http://bods.openownership.org/resource/>
 
 # This query returns all the entities which are part of the same corporate
-# group as the selected target (openownership-register-13061757995887162872 / BESSEMER TRUST LIMITED).
+# group as the specificed target
+# (openownership-register-13061757995887162872 / BESSEMER TRUST LIMITED).
 
 SELECT ?groupMember ?groupMemberName
 WHERE  {
     ?ultimateParent bods:hasInterestIn+ bods-res:openownership-register-13061757995887162872 .
     ?ultimateParent foaf:name ?ultimateParentName .
+    ?ultimateParent rdf:type bods:Entity .
+
     ?ultimateParent bods:hasInterestIn+ ?groupMember .
     ?groupMember foaf:name ?groupMemberName .
     ?groupMember rdf:type bods:Entity .
 
     FILTER NOT EXISTS {
        ?s bods:hasInterestIn ?ultimateParent .
+       ?s rdf:type bods:Entity .
     }
 }
-
-
